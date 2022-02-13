@@ -6,6 +6,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Inter', sans-serif;
+    font-size: 61.5%;
 }
 
 .section-one{
@@ -34,20 +35,23 @@
 }
 
 .text-content h3{
-    font-size: 35px;
+    font-size: 3.5rem;
     color: hsl(0, 0%, 100%);
     margin-bottom: 30px;
+    max-width: 370px;
 }
 
 .text-content span{
     color: hsl(277, 64%, 61%);
+    font-size: 3.5rem;
 }
 
 .text-content p{
     color: hsla(0, 0%, 100%, 0.75);
-    font-size: 13px;
+    font-size: 1.3rem;
     margin-bottom: 50px;
     padding-top: 10px;
+    max-width: 300px;
 }
 
 .benefits{
@@ -58,11 +62,11 @@
 
 .benefits p{
     color: hsla(0, 0%, 100%, 0.6);
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .benefits h3{
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .image{
@@ -82,4 +86,88 @@ img{
     top: 0;
     left: 0;
     border-radius: 0px 8px 8px 0px;
+}
+
+@media(max-width: 930px){
+
+    .section-one{
+        height: 1000px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 700px;
+        width: 450px;
+    }
+
+    img{
+        border-radius: 8px 8px 0px 0px;
+        width: 450px;
+    }
+    .overlay{
+        width: 450px;
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .text-content{
+        text-align: center;
+    }
+}
+
+@media(max-width: 500px){
+
+    *{
+        font-size: 50%;
+    }
+
+    .section-one{
+        height: 1300px;
+    }
+    
+    .main{
+        width: 360px;
+    }
+
+    img{
+        width: 360px;
+    }
+
+    .overlay{
+        width: 360px;
+}
+
+    .content{
+        padding: 10px 10px;
+        margin-top: 25px;
+    }
+
+    .text-content h3{
+        max-width: 290px;
+    }
+
+    .text-content p{
+        padding-left: 33px;
+        font-size: 1.7rem;
+        max-width: 280px;
+        margin-bottom: 15px;
+    }
+
+    .benefits{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .benefits p{
+        font-size: 1.8rem;
+    }
+    
+    .benefits h3{
+        font-size: 3rem;
+    }
+
 }
